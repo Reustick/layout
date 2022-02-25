@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Белая техника</title>
+</head>
+<body>
+    <!-- Блок сравнения товаров -->
+    <section class="product-comparison section-outer">
+        <div class="product-comparison__body">
+            <!-- Выбор категории -->
+            <div class="product-comparison__header">
+                <div class="product-comparison__column">
+                    <div class="item-column">
+                        <div class="item-column__title">Для категорий <img src="image/lgque.png"></div>
+                        <div class="item-column__select"><select name="change-category"><option value="Смартфоны">Смартфоны</option></select>
+                        </div>
+                        <div class="item-column__radio">
+                            <label><input type="radio" checked  name="one" />&nbsp;&nbsp;&nbsp;Все характеристики</label>
+                            <label><input type="radio" name="one" />&nbsp;&nbsp;&nbsp;Показать только различия</label>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="product-comparison__column">
+                    <div class="item-column-phone">
+                        <div class="item-column__cross-image"><a href="#"><img src="image/lgcross.png"></a></div>
+                        <div class="item-column__img"><img src="image/iphone.png" alt="iphone"></div>
+                        <div class="item-column__category">Смартфоны</div>
+                        <div class="item-column__name">Apple iPhone 11 64 Gb (Gold)</div>
+                        <div class="item-column__price"> <strong>49 999 &#8381</strong>&nbsp;<s>60 999 &#8381</s></div>
+                        <div class="item-column__buy"> <a href="#"><img src="image/icobuy.png"> </a> <a href="#"><img src="image/lgphone.png" class="item-column__lgphone">Купить в 1 клик</a></div>
+                    </div>
+                </div>
+                <div class="product-comparison__column">
+                    <div class="item-column-phone">
+                        <div class="item-column__cross-image"><a href="#"><img src="image/lgcross.png"></a></div>
+                        <div class="item-column__img"><img src="image/xiaomi.png" alt="xiaomi"></div>
+                        <div class="item-column__category">Смартфоны</div>
+                        <div class="item-column__name">Xiaomi Redmi Note 8 Pro (blue)</div>
+                        <div class="item-column__price"><strong>16 700 &#8381</strong>&nbsp;<s>19 999 &#8381</s></div>
+                        <div class="item-column__buy"><a href="#"><img src="image/icobuy.png"></a><a href="#"><img src="image/lgphone.png" class="item-column__lgphone">Купить в 1 клик</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Выбор категории -->
+
+            <!-- Сравнение характеристик -->
+            <div class="product-comparison__main">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td width="360">Бонусные рубли</td>
+                            <td width="580">+2000 бонусов</td>
+                            <td width="530">+1000 бонусов</td>
+                        </tr>
+                        <tr>
+                            <td>Акции и специальные <br> предложения</td>
+                            <td>Рассрочка</td>
+                            <td>Скидка 50% на наушники</td>
+                        </tr>
+                        <tr>
+                            <td>Наличие</td>
+                            <td>В наличии</td>
+                            <td>От 3 до 5 дней</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Основные</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Операционная система</td>
+                            <td>IOS 13</td>
+                            <td>IOS 13</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Цвет</td>
+                            <td>Золотой</td>
+                            <td>Черный</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Год выпуска</td>
+                            <td>2019</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Процессор</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Производитель</td>
+                            <td>Apple</td>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Тип</td>
+                            <td>A13 Bionic</td>
+                            <td>A13 Bionic</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Экран</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Диагональ(дюймов)</td>
+                            <td>5,8</td>
+                            <td>5,8</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Тип экрана</td>
+                            <td>Super Retina XDR</td>
+                            <td>Super Retina XDR</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Разрешение экрана</td>
+                            <td>2436x1125 точек</td>
+                            <td>2436x1125 точек</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Камера</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Количество основных камер</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Разрешение основных камер</td>
+                            <td>12 МПикс, 12 МПикс, 12 МПикс</td>
+                            <td>12 МПикс, 12 МПикс, 12 МПикс</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Функции основной камеры</td>
+                            <td>Режим «Портрет», портретное освещение, оптическая <br> стабилизация, вспышка True Tone, Focus Pixels</td>
+                            <td>Режим «Портрет», портретное освещение, оптическая <br> стабилизация, вспышка True Tone, Focus Pixels</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Фронтальная камера</td>
+                            <td>есть</td>
+                            <td>есть</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Разрешение фронтальной камеры</td>
+                            <td>12 Мпикс</td>
+                            <td>12 Мпикс</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Вспышка</td>
+                            <td>есть, светодиодная</td>
+                            <td>есть, светодиодная</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Память</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Встроенная память</td>
+                            <td>64 Гб</td>
+                            <td>64 Гб</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Питание</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Тип разъема для зарядки</td>
+                            <td>Lightning</td>
+                            <td>Lightning</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Функция быстрой зарядки</td>
+                            <td>есть</td>
+                            <td>есть</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Функция беспроводной зарядки</td>
+                            <td>есть</td>
+                            <td>есть</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Подключение</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Разъем Lightning 8 Pin <img src="image/lgque.png"></td>
+                            <td>есть</td>
+                            <td>есть</td>
+                        </tr>
+                        <tr>
+                            <td class="product-comparison__main__description">Разъем для наушников</td>
+                            <td>Lightning</td>
+                            <td>Lightning</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Сравнение характеристик -->
+
+            <!-- Описание сравниваемых телефонов -->
+            <div class="product-comparison__subtitle">Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A) - сравнение основных характеристик моделей</div>
+            <!-- Описание сравниваемых телефонов -->
+
+            <!-- Кнопки выбора -->
+            <div class="product-comparison__buttons">
+                <button class="product-comparison__btn1" type="button"><p>Очистить список</p></button>
+                <button class="product-comparison__btn1 btn2" type="button"><p><img src="image/vector.png" class="btn2">Назад к товарам</p></button>
+            </div>
+            <!-- Кнопки выбора -->
+        </div>
+    </section>
+    <!-- Блок сравнения товаров -->
+</body>
+</html>

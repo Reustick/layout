@@ -1,0 +1,160 @@
+@import 'normalize.scss';
+//== Mixins ==
+@mixin font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+//== /Mixins ==
+
+//== Variables ==
+$color-comparison: #f6f6f6;  // Светло-серый цвет для заднего фона
+$color-body: #fff;          // Белый цвет для тела блока
+$color-description:#9a9a9a; // серый цвет для описания
+
+$screen-sm: 320px;
+$screen-md: 768px;
+$screen-lg: 980px;
+$screen-xl: 1366px;
+
+$screen-sm-max: 767px; 
+$screen-md-max: 979px; 
+$screen-lg-max: 1365px; 
+//==/ Variables ==
+
+//== Common ==
+body{
+    @include font-montserrat;
+    background-color: $color-comparison;
+}
+.section-outer{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.product-comparison__body {
+    background-color: $color-body;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 45px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+table{
+    border-spacing: 1px 50px;
+}
+
+//== /Common ==
+.product-comparison{
+    
+    &__header{
+        display: flex;
+        height: 200px auto;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 40px; 
+        @media (max-width: $screen-sm-max) {
+            flex-direction: column;
+        }
+    }
+    &__column{
+        .item-column {
+            width: 360px;
+            &-phone{
+                width: 430px;
+                height: 165px;
+                margin-right: 170px;
+            }
+            &__title{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            &__select{
+                margin-bottom: 30px;
+            }
+            &__radio{
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: 20px;
+                }
+                
+            }
+            &__img{
+                float: left;
+                margin-right: 35px;
+            }
+            &__cross-image{
+                display: flex;
+                justify-content: flex-end;
+            }
+            &__category{
+                margin-bottom: 20px;
+            }
+            &__name{
+                margin-bottom: 20px;
+            }
+            &__price{
+                margin-bottom: 20px;
+            }
+            &__buy{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                display: flex;
+                align-items: center;
+            }
+            &__lgphone {
+                margin-right: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+    &__main{
+        margin-bottom: 40px;
+        &__description{
+            color: $color-description;
+            padding-left: 10px;
+        }
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+    &__subtitle{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn1{
+        width: 235px;
+	    height: 50px;
+	    margin-left: 40px;
+	    margin-bottom: 20px;
+	    border-radius: 10px;
+        background-color: $color-comparison;
+        color: #000;
+        border-width: 0;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn2{
+        background-color: #000;
+        color:$color-body;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    @media (max-width: $screen-sm-max) {
+        flex-direction: column;
+    }
+}
